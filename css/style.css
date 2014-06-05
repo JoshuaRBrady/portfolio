@@ -1,0 +1,13 @@
+.btn-danger {
+    background: #4c493e;
+    border: #222028;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 25%;
+}
+
+.btn-danger:hover {
+    background: #2f3837;
+    border: 2px, #f5f5f5;
+}
