@@ -46,15 +46,9 @@ a:focus,
 	/*height: 100%;*/
 /*}*/
 
-.nav-style > li > a,
-.nav-style > li > a:focus {
-    color: #ffffff;
-}
-
 .hero-content-text {
 	display: inline-block;
-    color: #ffffff;
-	text-shadow: 0 1px 0 #053A48;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 	width: 300px;
 	margin: 0 0 40px;
 	font-size: 18px;

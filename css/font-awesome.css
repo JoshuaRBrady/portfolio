@@ -281,6 +281,9 @@
 .fa-repeat:before {
   content: "\f01e";
 }
+.fa-rebel {
+    content: "\&#xf1d0";
+}
 .fa-refresh:before {
   content: "\f021";
 }

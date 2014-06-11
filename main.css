@@ -262,7 +262,7 @@ li.dummy.active { /* scrollspy fix */
 .hero {
 	padding: 0;
 	overflow: hidden;
-	background: url("img/bg-img.jpg") top center;
+	background: url("img/IMAG0432.jpg") top center;
 	height: 100%;
 }
 
@@ -279,7 +279,6 @@ li.dummy.active { /* scrollspy fix */
 	width: 500px;
 	text-align: center;
 	overflow: hidden;
-	text-align: center;
 }
 
 .hero-content-title {
@@ -977,7 +976,7 @@ li.dummy.active { /* scrollspy fix */
 }
 
 .contact-reset {
-	display: none;
+	/*display: none;*/
     margin-right: 20px;
     -moz-transition: 0.25s;
     -o-transition: 0.25s;
