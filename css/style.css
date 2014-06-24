@@ -1,68 +1,367 @@
-body {
-	font-family: "Lato", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	color: #053A48;
-    background-color: #ffffff;
+/*General Properties*/
+.body {
+    background: #2f3837;
+    font-family: "Droid Sans";
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Droid Sans", sans-serif;
-	color: #053A48;
+.p {
+    line-height: 1.5;
+    margin: 2em;
 }
 
+a,
 .btn-link {
-	color: #ffffff;
+	color: #02CC19;
 }
 
 a:hover,
 a:focus,
 .btn-link:hover {
-	color: #ffffff;
+	color: #02E51C;
 }
 
-.btn {
-    background: #c4c8cb;
-    border-color: #c4c8cb;
-    color: #053A48;
-    border: 2px;
-    border-top-right-radius: 25%;
-    border-top-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    border-bottom-left-radius: 25%;
+.heading {
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	font-size: 24px;
+	line-height: 24px;
+	border-bottom: 1px dotted #222028;
+}
+.heading_2 {
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	font-size: 24px;
+	line-height: 24px;
+	border-bottom: 1px dotted #c5c7b6;
+    color: #c5c7b6;
 }
 
-.btn:hover {
-    background: #053A48;
-    border-color: #053A48;
-    color: #c4c8cb;
-    border: 2px;
-}
-/* Changed the url directly on the main.css
-/*.hero {*/
-	/*padding: 0;*/
-	/*overflow: hidden;*/
-	/*background: url("img\IMAG0427.jpg") top center;*/
-	/*height: 100%;*/
-/*}*/
 
+/*Headers*/
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.75em;
+}
+
+
+/*Navbar Header*/
+li.dummy,
+li.dummy.active { /* scrollspy fix */
+	display: none;
+}
+.nav-tabs {
+	border-bottom: 1px solid #c5c7b6;
+}
+.nav-tabs > li > a {
+	-moz-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    background: #fff8d3;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #c5c7b6;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s
+}
+.nav-tabs > li > a:hover {
+	background: #c5c7b6;
+	border-color: transparent;
+	border-bottom-color: #c5c7b6;
+	color: #2f3837;
+}
+.nav-tabs > li > a:hover {
+	background: #c5c7b6;
+	border-color: transparent;
+	border-bottom-color: #c5c7b6;
+	color: #2f3837;
+}
 .nav-style > li > a,
 .nav-style > li > a:focus {
-    color: #ffffff;
+	color: #c5c7b6;
+    font-family: "Droid Sans", sans-serif;
+    padding: 0 15px;
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 2px solid transparent;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s
 }
 
-.hero-content-text {
-	display: inline-block;
-    color: #ffffff;
-	text-shadow: 0 1px 0 #053A48;
-	width: 300px;
-	margin: 0 0 40px;
-	font-size: 18px;
+
+/*Hero Section*/
+.name {
+    border: 14px solid #c5c7b6;
+    border-radius: 8px;
+    display: inline-block;
+    color: #c5c7b6;
+    text-align: center;
+    position: relative;
+    margin: 300px auto 25px auto;
+    padding: 10px;
+    box-shadow: 0 1px 5px #c5c7b6;
+    vertical-align: middle;
+    width: 75em;
 }
-/*removed display: none on main.css*/
+
+.title {
+    font-family: "Revalia", sans-serif;
+    font-size: 65px;
+    text-shadow: 0 1px 5px #c5c7b6;
+}
+
+.flair {
+    text-align: center;
+    color: #c5c7b6;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    padding: 25px 0 75px 0;
+    white-space: nowrap;
+    text-shadow: 0 1px 5px #c5c7b6;
+}
+
+.hero {
+    padding: 0;
+    overflow: hidden;
+    background: url("../img/riveting.jpg"); /*Background Image*/
+    height: 100%;
+}
+
+.btn-main {
+    border: 7px solid #c5c7b6;
+    display: inline-block;
+    color: #c5c7b6;
+    /*font-family: "Droid Sans", sans-serif;*/
+    text-shadow: 0 1px 5px #c5c7b6;
+    box-shadow: 0 1px 5px #c5c7b6;
+    text-align: center;
+    position: relative;
+    margin: 25px auto 150px auto;
+    padding: 15px;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.btn-main:hover{
+    -webkit-stroke-width: 5px;
+    -webkit-stroke-color: #02CC19;
+    -webkit-fill-color: #02CC19;
+    box-shadow: 2px 0 20px #02CC19;
+    text-shadow: 2px 0 20px #02CC19;
+    color: #fff8d3;
+    border-color: #fff8d3;
+    opacity: 0.7;
+}
+
+
+/*Summary Section*/
+
+.summary {
+    background: #c5c7b6;
+    padding: 150px 0 150px 0;
+    font-size: 100%;
+    text-align: center;
+    hyphens: auto;
+}
+.summary-text {
+    width: 75em;
+    margin: auto;
+    padding-left: -10em;
+    text-align: justify;
+}
+
+
+/*Portfolio Section*/
+.portfolio {
+    padding: 150px 0 150px 0;
+    color: #c5c7b6;
+}
+
+
+/*Skills Section*/
+.skills {
+    background: #c5c7b6;
+    padding: 150px 0 50px 0;
+}
+
+.skill {
+    position: relative;
+    margin: 0 auto 50px auto;
+    text-align: justify;
+    /*height: 250px;*/
+    width: 225px;
+}
+.skill-photo {
+    position: relative;
+    vertical-align: middle;
+    margin: 25px auto 25px auto;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+}
+.cook {
+    background: url("../img/fork.png") no-repeat center center;
+
+}
+.cs {
+    background: url("../img/people.png") no-repeat center center;
+}
+
+.fe {
+    background: url("../img/pictures.png") no-repeat center center;
+}
+
+.be {
+    background: url("../img/server.png") no-repeat center center;
+}
+
+
+/*References and Experience*/
+.experience {
+    padding: 150px 0 150px 0;
+}
+
+
+/*Blog & Twitter*/
+.blog {
+    background: #c5c7b6;
+    padding: 150px 0 75px 0;
+    font-size: 100%;
+    text-align: justify;
+}
+.twitter-widget {
+	display: block;
+	/*background: #fafafa;*/
+	padding: 5px 10px;
+}
+
+.twitter-widget ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.twitter-widget ul > li {
+	margin-bottom: 20px;
+    border-bottom: 1px solid #2f3837;
+    overflow: auto;
+    clear: both
+}
+
+.twitter-widget ul > li:last-child {
+	margin-bottom: 0;
+	border-bottom: 0;
+	-moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.twitter-widget .tweet {
+	overflow: hidden;
+}
+
+.twitter-widget .timePosted,
+.twitter-widget .interact {
+	display: inline-block;
+}
+
+.twitter-widget .timePosted {
+	margin-right: 5px;
+}
+
+.twitter-widget .interact a {
+	margin-left: 5px;
+}
+
+.twitter-meta {
+	float: right;
+}
+
+.twitter-widget .user a img {
+	margin-right: 10px;
+    margin-top: 5px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    float: left
+}
+
+.twitter-widget .user > a {
+	color: #666;
+}
+
+.twitter-widget .user > a:hover {
+	color: #666;
+	cursor: default;
+	text-decoration: none;
+}
+
+.twitter-widget .user > a > span[data-scribe="element:screen_name"] {
+	color: #aaa;
+}
+
+.twitter-widget .user > a > span[data-scribe="element:screen_name"]:hover {
+	color: #666;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*Contact Form*/
+.contact {
+    padding: 150px 0 150px 0;
+
+}
+
+.contact-inner {
+	text-align: justify;
+    color: #c5c7b6
+}
+
+.contact-wrap {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #c5c7b6;
+}
+
+.contact-wrap span {
+	display: block;
+}
+
+.contact-form {
+	overflow: auto;
+}
+
+.contact-form .form-group {
+	position: relative;
+}
+
 .contact-reset {
-	background: #ffffff;
-    border-color: #ffffff;
+	display: none;
     margin-right: 20px;
     -moz-transition: 0.25s;
     -o-transition: 0.25s;
@@ -70,8 +369,84 @@ a:focus,
     transition: 0.25s
 }
 
-.main-header .navbar {
-	height: 50px;
-	background: #c4c8cb;
-	border-bottom: 2px solid #eee;
+.success-mark,
+.error-mark {
+	position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -12px;
+    opacity: 0;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    -webkit-transition: 0.25s;
+    transition: 0.25s
 }
+
+.success-mark {
+	color: #02CC19;
+}
+
+.error-mark {
+	color: #d2322d;
+}
+
+.contact-notif {
+	width: 500px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+    background: #c5c7b6;
+    padding: 10px 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    opacity: 0.75;
+    display: none
+}
+
+.contact-notif.success {
+	color: #02CC19;
+	background: #c5c7b6;
+}
+
+.contact-notif.error {
+	color: #d2322d;
+	background: #c5c7b6;
+}
+
+.social {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.social li > a {
+	display: block;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #c5c7b6;
+    border: 1px solid #c5c7b6;
+    line-height: 30px;
+    vertical-align: middle;
+    color: #2f3837;
+    }
+
+.social li > a:hover {
+	color: #222028;
+    text-shadow: #02CC19 ;
+    border-color: #02CC19;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    text-decoration: none
+}
+
+
+
+/*Footer*/
