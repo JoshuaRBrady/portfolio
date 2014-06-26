@@ -22,37 +22,37 @@
 
 <body class="body">
 
-<!--Navbar header-->
-	<header class="main-header">
-		<!-- master header -->
-		<div class="navbar">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-				<i class="fa fa-bars"></i>
-			</button>
-			<!-- main navigation -->
-			<div id="main-nav" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav nav-style">
-					<li class="dummy"><a href="#hero"></a></li><!-- dummy li for scrollspy fix -->
-					<li><a href="#summary">Summary</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#experience">Work Experience</a></li>
-					<li><a href="#blog">Blog</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
+<!--&lt;!&ndash;Navbar header&ndash;&gt;-->
+	<!--<header class="main-header">-->
+		<!--&lt;!&ndash; master header &ndash;&gt;-->
+		<!--<div class="navbar">-->
+			<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">-->
+				<!--<i class="fa fa-bars"></i>-->
+			<!--</button>-->
+			<!--&lt;!&ndash; main navigation &ndash;&gt;-->
+			<!--<div id="main-nav" class="collapse navbar-collapse">-->
+				<!--<ul class="nav navbar-nav nav-style">-->
+					<!--<li class="dummy"><a href="#hero"></a></li>&lt;!&ndash; dummy li for scrollspy fix &ndash;&gt;-->
+					<!--<li><a href="#summary">Summary</a></li>-->
+					<!--<li><a href="#portfolio">Portfolio</a></li>-->
+					<!--<li><a href="#experience">Work Experience</a></li>-->
+					<!--<li><a href="#blog">Blog</a></li>-->
+					<!--<li><a href="#contact">Contact</a></li>-->
+				<!--</ul>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</header>-->
 
 <!--Hero Section-->
     <section id="hero" class="hero">
         <div class="container">
-            <div class="name row col-lg-12 col-md-6 col-sm-6">
+            <div class="name row col-xs-12">
                     <h1 class="title">Joshua Brady</h1>
             </div>
 
-            <div class="row col-md-4 col-sm-12 col-xs-12 flair"><h3>Web developer.</h3></div>
-            <div class="row col-md-4 col-sm-12 col-xs-12 flair"><h3>Culinary artist.</h3></div>
-            <div class="row col-md-4 col-sm-12 col-xs-12 flair"><h3>Bad - ass.</h3></div>
+            <div class="row col-md-4 hidden-sm hidden-xs flair"><h3>Web developer.</h3></div>
+            <div class="row col-md-4 hidden-sm hidden-xs flair"><h3>Culinary artist.</h3></div>
+            <div class="row col-md-4 hidden-sm hidden-xs flair"><h3>Bad - ass.</h3></div>
 
             <div class="text-center"><a class="btn btn-lg btn-main" href="#summary">LET'S DO THIS</a></div>
 
@@ -239,32 +239,32 @@
 				</div>
 
 				<!-- contact form -->
-				<form id="contact-form" class="col-md-8 col-sm-8 contact-form" action="includes/mail.php" method="post" data-parsley-namespace="data-parsley-">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label for="name" class="sr-only"></label>
-								<input id="name" name="name" class="form-control required" placeholder="Name" type="text" data-parsley-trigger="change">
-							</div>
-						</div>
+				<!--<form id="contact-form" class="col-md-8 col-sm-8 contact-form" action="includes/mail.php" method="post" data-parsley-namespace="data-parsley-">-->
+					<!--<div class="row">-->
+						<!--<div class="col-md-6">-->
+							<!--<div class="form-group">-->
+								<!--<label for="name" class="sr-only"></label>-->
+								<!--<input id="name" name="name" class="form-control required" placeholder="Name" type="text" data-parsley-trigger="change">-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="col-md-6">
-							<div class="form-group">
-								<label for="email" class="sr-only"></label>
-								<input id="email" name="email" class="form-control required" placeholder="Email" data-parsley-type="email" data-parsley-trigger="change">
-							</div>
-						</div>
-					</div>
+						<!--<div class="col-md-6">-->
+							<!--<div class="form-group">-->
+								<!--<label for="email" class="sr-only"></label>-->
+								<!--<input id="email" name="email" class="form-control required" placeholder="Email" data-parsley-type="email" data-parsley-trigger="change">-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
 
-					<div class="form-group">
-						<textarea name="message" class="form-control required" rows="8" placeholder="Message" data-parsley-trigger="keyup"></textarea>
-					</div>
+					<!--<div class="form-group">-->
+						<!--<textarea name="message" class="form-control required" rows="8" placeholder="Message" data-parsley-trigger="keyup"></textarea>-->
+					<!--</div>-->
 
-					<div class="form-group">
-						<button type="submit" class="btn btn-default pull-right">Send</button>
-						<a href="#" class="btn btn-danger pull-right contact-reset">Reset</a>
-					</div>
-				</form>
+					<!--<div class="form-group">-->
+						<!--<button type="submit" class="btn btn-default pull-right">Send</button>-->
+						<!--&lt;!&ndash;<a href="#" class="btn btn-danger pull-right contact-reset">Reset</a>&ndash;&gt;-->
+					<!--</div>-->
+				<!--</form>-->
 
 				<!-- message sending statuses -->
 				<div id="contact-sending-success" class="contact-notif success">Message has been successfully sent.</div>
@@ -277,11 +277,11 @@
 	</section>
 	<!-- contact section end -->
 
-	<footer class="main-footer">
-		<div class="container">
+	<!--<footer class="main-footer">-->
+		<!--<div class="container">-->
 
-		</div>
-	</footer>
+		<!--</div>-->
+	<!--</footer>-->
 
 	<!-- javascript -->
 	<script src="js/jquery-1.10.2.min.js"></script><!-- jquery -->
