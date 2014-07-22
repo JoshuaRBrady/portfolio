@@ -11,7 +11,7 @@
 
 a,
 .btn-link {
-	color: #02CC19;
+	color: #3498DB;
 }
 
 a:hover,
@@ -35,7 +35,6 @@ a:focus,
 	border-bottom: 1px dotted #c5c7b6;
     color: #c5c7b6;
 }
-
 
 /*Headers*/
 h1 {
@@ -62,20 +61,6 @@ h6 {
     font-size: 0.75em;
 }
 
-
-/*Navbar Header*/
-/*.navbar {*/
-    /*position: fixed;*/
-    /*height: 15px;*/
-    /*background: 222028;*/
-/*}*/
-/*li.dummy,*/
-/*li.dummy.active { *//* scrollspy fix */
-	/*display: none;*/
-/*}*/
-/*.nav-tabs {*/
-	/*border-bottom: 1px solid #c5c7b6;*/
-/*}*/
 .nav-tabs > li > a {
 	-moz-border-radius: 2px 2px 0 0;
     -webkit-border-radius: 2px 2px 0 0;
@@ -87,36 +72,7 @@ h6 {
     -o-transition: all 0.25s;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
-    position:;
 }
-/*.nav-tabs > li > a:hover {*/
-	/*background: #c5c7b6;*/
-	/*border-color: transparent;*/
-	/*border-bottom-color: #c5c7b6;*/
-	/*color: #2f3837;*/
-/*}*/
-/*.nav-tabs > li > a:hover {*/
-	/*background: #c5c7b6;*/
-	/*border-color: transparent;*/
-	/*border-bottom-color: #c5c7b6;*/
-	/*color: #2f3837;;*/
-/*}*/
-/*.main-header .navbar-nav.navbar-right:last-child {*/
-	/*margin-right: -15px;*/
-	/*}*/
-/*.nav-style > li > a,*/
-/*.nav-style > li > a:focus {*/
-	/*color: #c5c7b6;*/
-    /*font-family: "Droid Sans", sans-serif;*/
-    /*padding: 0 15px;*/
-    /*line-height: 50px;*/
-    /*height: 50px;*/
-    /*border-bottom: 2px solid transparent;*/
-    /*-moz-transition: all 0.25s;*/
-    /*-o-transition: all 0.25s;*/
-    /*-webkit-transition: all 0.25s;*/
-    /*transition: all 0.25s*/
-/*}*/
 
 
 /*Hero Section*/
@@ -130,6 +86,16 @@ h6 {
     margin: 300px auto 25px auto;
     padding: 10px;
     box-shadow: 0 1px 5px #c5c7b6;
+    vertical-align: middle;
+}
+
+.name_sm {
+    display: inline-block;
+    color: #c5c7b6;
+    text-align: center;
+    position: relative;
+    margin: 300px auto 25px auto;
+    padding: 10px;
     vertical-align: middle;
 }
 
@@ -176,10 +142,10 @@ h6 {
 
 .btn-main:hover{
     -webkit-stroke-width: 5px;
-    -webkit-stroke-color: #02CC19;
-    -webkit-fill-color: #02CC19;
-    box-shadow: 2px 0 20px #02CC19;
-    text-shadow: 2px 0 20px #02CC19;
+    -webkit-stroke-color: #3498DB;
+    -webkit-fill-color: #3498DB;
+    box-shadow: 2px 0 20px #3498DB;
+    text-shadow: 2px 0 20px #3498DB;
     color: #fff8d3;
     border-color: #fff8d3;
     opacity: 0.7;
@@ -198,7 +164,7 @@ h6 {
 .summary-text {
     margin: auto;
     padding-left: -10em;
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -218,22 +184,45 @@ h6 {
 .skill {
     position: relative;
     margin: 0 auto 50px auto;
-    text-align: justify;
+    text-align: left;
     /*height: 250px;*/
     width: 225px;
 }
 .skill-photo {
     position: relative;
-    vertical-align: middle;
     margin: 25px auto 25px auto;
     height: 250px;
     width: 250px;
     overflow: hidden;
-    text-align: center;
+    background: no-repeat center center;
+    background-sizer: 100% 100%;
+    border-radius: 10px;
 }
+
+.skill-hover {
+    display: none;
+}
+
+.skill-photo:hover {
+    border: 1px solid #3498db;
+    transition: .5;
+}
+
+.skill-photo:hover + .skill-hover {
+    display: block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 225px;
+    transition: .5;
+}
+
+.skill-photo:hover ~ .skill {
+    display: none;
+    transition: .5;
+}
+
 .cook {
     background: url("../img/fork.png") no-repeat center center;
-
 }
 .cs {
     background: url("../img/people.png") no-repeat center center;
@@ -255,11 +244,11 @@ h6 {
 
 
 /*Blog & Twitter*/
-.blog {
+.social {
     background: #c5c7b6;
     padding: 150px 0 75px 0;
     font-size: 100%;
-    text-align: justify;
+    text-align: left;
 }
 .twitter-widget {
 	display: block;
@@ -345,7 +334,7 @@ h6 {
 }
 
 .contact-inner {
-	text-align: justify;
+	text-align: left;
     color: #c5c7b6
 }
 
@@ -390,7 +379,7 @@ h6 {
 }
 
 .success-mark {
-	color: #02CC19;
+	color: #3498DB;
 }
 
 .error-mark {
@@ -414,7 +403,7 @@ h6 {
 }
 
 .contact-notif.success {
-	color: #02CC19;
+	color: #3498DB;
 	background: #c5c7b6;
 }
 
@@ -423,13 +412,13 @@ h6 {
 	background: #c5c7b6;
 }
 
-.social {
+.widgets {
 	display: inline-block;
 	width: 100%;
 	text-align: center;
 }
 
-.social li > a {
+.widgets li > a {
 	display: block;
     width: 30px;
     height: 30px;
@@ -443,10 +432,10 @@ h6 {
     color: #2f3837;
     }
 
-.social li > a:hover {
+.widgets li > a:hover {
 	color: #222028;
-    text-shadow: #02CC19 ;
-    border-color: #02CC19;
+    text-shadow: #3498DB ;
+    border-color: #3498DB;
     -moz-transition: all 0.25s;
     -o-transition: all 0.25s;
     -webkit-transition: all 0.25s;
