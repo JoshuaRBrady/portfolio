@@ -1,0 +1,211 @@
+.body {
+    height: 100%;
+    width: 100%;
+    background-color: #36362C;
+    color: #E6D4A7;
+}
+
+a:link {
+    text-decoration: none;
+    color: #5D917D;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #5D917D;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #A8AD80;
+}
+
+a:active {
+    text-decoration: none;
+    color: #A8AD80;
+}
+
+.view-size {
+    width: 85%;
+    height: 100%;
+    position: absolute;
+}
+
+.full-size {
+    width: 100%;
+    height: 100%;
+}
+
+/***** Home Page *****/
+.main-content-lg {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.background-main {
+    background-attachment: fixed;
+    overflow: hidden;
+    background: url("../images/shovel.jpg") no-repeat center center;
+    background-size: auto 100%;
+}
+
+/***** End Home *****/
+
+/***** Navbar Section *****/
+.nav-size {
+    width: 15%;
+    height: 100%
+}
+
+.nav-block {
+    background-position: top;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: auto 100%;
+    position: fixed;
+    right: 0;
+    background-color: #36362C;
+    text-align: right;
+    padding: 3%;
+}
+
+.nav-link {
+    font-size: 2em;
+    border-bottom: 2px solid;
+    text-decoration: none;
+    padding: 3%;
+}
+
+.nav-footer {
+    bottom: 5%;
+    right: 3%;
+    position: fixed;
+}
+
+/***** Navbar End *****/
+
+/***** Portfolio View *****/
+.background-portfolio {
+    background: #5D917D;
+    color: #36362C;
+
+}
+
+.portfolio-content-lg {
+    width: 400px;
+    height: 75%;
+    position: relative;
+    top: 25%;
+    margin: 0 0 6% 6%;
+    -ms-transform: translateY(-25%);
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.project-img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: -100px;
+    z-index: 5;
+}
+
+.char-base {
+    height: 100px;
+    width: 150px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 1;
+    margin: -65px auto 180px auto;
+    -webkit-animation: pulsate 2s infinite alternate;
+    -moz-animation: pulsate 2s infinite alternate;
+    -animation: pulsate 2s infinite alternate;
+    background-color: blue;
+}
+
+@-webkit-keyframes pulsate {
+    from {
+        opacity: .1;
+    }
+    to {
+        opacity: .3;
+    }
+}
+
+@-moz-keyframes pulsate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulsate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.playa-base {
+    box-shadow: 0 10px 30px 0 darkgreen,
+    0 20px 40px 0 green,
+    0 30px 50px 0 silver;
+}
+
+.health-bar-text {
+    margin: 3px 0 0 0;
+    position: relative;
+    color: #000000;
+    min-width: 150px;
+    height: inherit;
+    white-space: nowrap;
+    font-size: 2em;
+    overflow: hidden;
+}
+
+.progress {
+    height: 1.5em;
+    margin-bottom: 5px;
+    margin-top: -15px;
+    overflow: hidden;
+    background-color: #959595;
+    border-radius: 15px;
+    /*-webkit-box-shadow:*/
+    /*0 10px 10px -10px silver,*/
+    /*0 20px 20px -8px blue,*/
+    /*0 30px 30px -6px black;*/
+    border: 8px ridge silver;
+}
+
+.recipe {
+    background: url('../images/pulled_pork.jpg') no-repeat center center;
+    /*height: 150px;*/
+    /*width: 150px;*/
+    overflow: hidden;
+}
+
+.recipe:hover {
+    opacity: 0.9;
+    background-size: auto 110%;
+    box-shadow: #D96205 1px;
+    transition: 0.25s;
+}
+
+.payroll-login {
+    margin: 15px auto 25px auto;
+    width: 335px;
+    background: #C1E1ED
+}
+
+/***** End Portfolio *****/
