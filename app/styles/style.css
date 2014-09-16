@@ -3,6 +3,7 @@
     width: 100%;
     background-color: #5D917D;
     color: #E6D4A7;
+    overflow-y: scroll;
 }
 
 a:link {
@@ -28,8 +29,11 @@ a:active {
 .view-size {
     /*width: 85%;*/
     height: 100%;
-    margin-left: -25px;
+    left: 0;
+    /*margin-left: -25px;*/
     position: absolute;
+    margin: 0px;
+    padding: 0;
 }
 
 .full-size {
@@ -53,7 +57,7 @@ a:active {
 .background-main {
     background-attachment: fixed;
     overflow: hidden;
-    background: url("../images/shovel.jpg") no-repeat center center;
+    background: url("../images/shovel.jpg") no-repeat top left;
     background-size: auto 100%;
     position: absolute;
 }
@@ -69,8 +73,9 @@ a:active {
 .nav-block {
     background-position: top;
     background-attachment: fixed;
-    overflow: hidden;
-    background-size: auto 100%;
+    min-width: 250px;
+    /*overflow: hidden;*/
+    /*background-size: auto 100%;*/
     position: fixed;
     right: 0;
     background-color: #36362C;
@@ -82,7 +87,8 @@ a:active {
     font-size: 2em;
     border-bottom: 2px solid;
     text-decoration: none;
-    padding: 3%;
+    padding: 15% 3% 3% 3%;
+
 }
 
 .nav-footer {
@@ -211,3 +217,32 @@ a:active {
 }
 
 /***** End Portfolio *****/
+
+/********* Skills ********/
+.icon { 
+    height: 75px;
+    width: 75px;
+    margin: 5px;
+}
+
+.food {
+    background: url('../images/Recipe-landing-page.jpg') no-repeat center center;
+    background-size: 100% auto;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.bad-ass {
+    background: url('../images/MacGyver.jpg') no-repeat center center;
+    background-size: auto 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+
+
+.skill-list {
+    margin: 5px auto 0 auto;
+    text-align: left;
+}
+/******End Skills ********/
