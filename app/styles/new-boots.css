@@ -5,3 +5,26 @@
 .panel-footer {
     clear: both;
 }
+
+.btn-default {
+    background-color: #36362C;
+    border: none;
+}
+
+@-moz-keyframes pulsate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulsate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
