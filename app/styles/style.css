@@ -62,6 +62,15 @@ a:active {
     position: absolute;
 }
 
+.btn-pulse {
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(93,145,125,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(93,145,125,1);
+    box-shadow: 0px 0px 5px 5px rgba(93,145,125,1);
+    -webkit-animation: pulsate 2s infinite alternate;
+    -moz-animation: pulsate 2s infinite alternate;
+    -animation: pulsate 2s infinite alternate;
+}
+
 /***** End Home *****/
 
 /***** Navbar Section *****/
@@ -281,5 +290,12 @@ a:active {
 
 .font-color-dark {
     color: #36362C
+}
+
+.vert-center {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 /******End Skills ********/
